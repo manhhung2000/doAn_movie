@@ -1,0 +1,56 @@
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-menu {
+        display: flex !important;
+        flex-direction: column;
+        width: 40%;
+        height: 500px;
+        position: absolute;
+        top: 55px;
+        right: -100%;
+        opacity: 1;
+        transition: all 0.5s ease !important;
+    }
+    .nav-menu.active {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        background: #ccc;
+        right: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .menu-icon {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav-menu.news {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start !important;
+        flex-direction: column;
+        right: 0;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.account {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start !important;
+        flex-direction: column;
+        right: 0;
+        z-index: 2;
+        transition: all 0.5s ease;
+    }
+}
